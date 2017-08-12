@@ -1,0 +1,53 @@
+body,ul,li{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+@-moz-keyframes naul{
+	to{
+		transform: translateX(-1009px);
+	}
+}
+@-ms-keyframes naul{
+	to{
+		transform: translateX(-1009px);
+	}
+}
+@keyframes naul{
+	to{
+		transform: translateX(-1050px);
+	}
+}
+.box{
+	width: 1171px;
+	height: 503px;
+	background: url(../img/bg.png);
+	margin:100px auto;
+	position:relative;
+	overflow: hidden;
+}
+.cont{
+	position: absolute;
+	top: 193px;
+	left:154px ;
+	width: 974px;
+	height: 116px;
+	overflow: hidden;
+}
+ul{
+	width: 2100px;
+	height: 116px;
+	background: #000;
+	animation:naul 10s linear infinite;
+}
+li{
+	width: 200px;
+	height: 116px;
+	float: left;
+	margin-right: 10px;
+}
+ul:hover {
+	animation-play-state: paused;
+}
